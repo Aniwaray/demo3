@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="588.0" prefWidth="771.0" style="-fx-background-color: #76E383;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kr3demo.AccountManager">
+    <children>
+        <Label layoutX="532.0" layoutY="14.0" prefHeight="36.0" prefWidth="159.0" text="МЕНЕДЖЕР" textFill="WHITE">
+            <font>
+                <Font name="Comic Sans MS Bold" size="25.0" />
+            </font>
+        </Label>
+        <Button fx:id="buttonExit" layoutX="37.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Выход" />
+        <Label fx:id="labelFio" layoutX="513.0" layoutY="50.0" style="-fx-background-color: white;">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <ListView fx:id="listData" layoutX="37.0" layoutY="204.0" prefHeight="336.0" prefWidth="716.0" />
+        <ComboBox fx:id="sortPrice" layoutX="70.0" layoutY="103.0" prefHeight="26.0" prefWidth="169.0" promptText="Без сортировки" style="-fx-background-color: white;" />
+        <ComboBox fx:id="sortManufacture" layoutX="69.0" layoutY="147.0" prefHeight="26.0" prefWidth="170.0" promptText="Все поставщики" style="-fx-background-color: white;" />
+    </children>
+</AnchorPane>
